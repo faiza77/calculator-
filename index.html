@@ -24,24 +24,39 @@
         </div>
 
         <div class="buttons">
+            <!-- Row 1: Scientific Operations (Square Root, Square, Power, Backspace) -->
+            <button type="button" onclick="squareRoot()" class="scientific" id="btn-sqrt" aria-label="Square Root">√</button>
+            <button type="button" onclick="square()" class="scientific" id="btn-square" aria-label="Square">x²</button>
+            <button type="button" onclick="addValue('^')" class="scientific" id="btn-power" aria-label="Power">xʸ</button>
+            <button type="button" onclick="display.value = display.value.slice(0, -1) || '0'" class="scientific" aria-label="Backspace">⌫</button>
+
+            <!-- Row 2: Clear, Sign Toggle, Percentage, Divide -->
             <button type="button" onclick="clearDisplay()" class="clear">AC</button>
+            <button type="button" onclick="toggleSign()" class="scientific" id="btn-sign" aria-label="Sign Toggle">+/-</button>
+            <button type="button" onclick="percentage()" class="scientific" id="btn-percent" aria-label="Percentage">%</button>
+            <button type="button" onclick="addValue('/')" class="operator">÷</button>
+
+            <!-- Row 3 -->
             <button type="button" onclick="addValue('7')">7</button>
             <button type="button" onclick="addValue('8')">8</button>
             <button type="button" onclick="addValue('9')">9</button>
+            <button type="button" onclick="addValue('*')" class="operator">×</button>
 
+            <!-- Row 4 -->
             <button type="button" onclick="addValue('4')">4</button>
             <button type="button" onclick="addValue('5')">5</button>
             <button type="button" onclick="addValue('6')">6</button>
-            <button type="button" onclick="addValue('3')">3</button>
+            <button type="button" onclick="addValue('-')" class="operator">−</button>
 
+            <!-- Row 5 -->
             <button type="button" onclick="addValue('1')">1</button>
             <button type="button" onclick="addValue('2')">2</button>
-            <button type="button" onclick="addValue('0')">0</button>
+            <button type="button" onclick="addValue('3')">3</button>
             <button type="button" onclick="addValue('+')" class="operator">+</button>
 
-            <button type="button" onclick="addValue('-')" class="operator">−</button>
-            <button type="button" onclick="addValue('*')" class="operator">×</button>
-            <button type="button" onclick="addValue('/')" class="operator">÷</button>
+            <!-- Row 6 -->
+            <button type="button" onclick="addValue('0')" class="zero">0</button>
+            <button type="button" onclick="addValue('.')">.</button>
             <button type="button" onclick="calculate()" class="equals">=</button>
         </div>
 
