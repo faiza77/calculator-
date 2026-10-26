@@ -152,7 +152,19 @@ h1 {
     font-size: 32px;
     font-weight: bold;
     font-family: inherit;
+    transition: color 0.2s ease, font-size 0.2s ease;
 }
+
+#display.error {
+    color: #d32f2f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body.dark-mode #display.error {
+    color: #ff6b6b;
+}
+
 
 /* ---------- Calculator buttons ---------- */
 

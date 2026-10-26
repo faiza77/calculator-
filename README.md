@@ -28,4 +28,9 @@ Sign Toggle (+/-): Inverts current input between positive & negative.
 Square Root (√): Computes square root of current display value.
 Exponentiation (x² or ^): Allows square or custom power calculations.
 
+https://github.com/faiza77/calculator-.git
+
+Prevent crashes on division by zero (Infinity or -Infinity)
+
+Display messages like "Cannot divide by 0" and "Invalid Input" instead of Infinity or NaN
 
