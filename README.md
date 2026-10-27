@@ -36,8 +36,3 @@ Display messages like "Cannot divide by 0" and "Invalid Input" instead of Infini
 
 3.Interactive Calculation History Log Panel:
 History Side Panel: Dedicated collapsible sidebar recording completed operation.
-
-
-
-
-
